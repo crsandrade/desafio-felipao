@@ -1,4 +1,4 @@
-const randomWin = Math.random() * (100 - 1) + 1
+const randomWin = Math.floor(Math.random() * (100 - 1) + 1)
 
 
 function defineRank(wins) {
@@ -20,4 +20,4 @@ function defineRank(wins) {
 }
 
 
-console.log(`O Herói tem saldo de ${randomWin.toFixed(0)} vitórias e está no nível ${defineRank(randomWin.toFixed(0))}`)
+console.log(`O Herói tem saldo de ${randomWin} vitórias e está no nível ${defineRank(randomWin)}`)
